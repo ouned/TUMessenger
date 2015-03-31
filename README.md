@@ -1,4 +1,4 @@
-# TUMessenger
+# TUMessenger Archive
 desktop chat application for the german team-ulm.de social network
 
 # Hinweise
