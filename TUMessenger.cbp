@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TUMessenger" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Windows">
+				<Option output="bin\Windows\TUMessenger.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj\Windows\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-pipe" />
+					<Add option="-mthreads" />
+					<Add option="-DCURL_STATICLIB" />
+					<Add option="-DwxUSE_UNICODE" />
+					<Add directory="C:\wxWidgets-2.9.2\lib\static_unicode\mswu" />
+					<Add directory="C:\wxWidgets-2.9.2\include" />
+					<Add directory="C:\curl" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:\wxWidgets-2.9.2\include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add library="libwxmsw29u_aui.a" />
+					<Add library="libwxmsw29u_html.a" />
+					<Add library="libwxmsw29u_core.a" />
+					<Add library="libwxbase29u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libkernel32.a" />
+					<Add library="libuser32.a" />
+					<Add library="libgdi32.a" />
+					<Add library="libwinspool.a" />
+					<Add library="libcomdlg32.a" />
+					<Add library="libadvapi32.a" />
+					<Add library="libshell32.a" />
+					<Add library="libole32.a" />
+					<Add library="liboleaut32.a" />
+					<Add library="libuuid.a" />
+					<Add library="libcomctl32.a" />
+					<Add library="libwsock32.a" />
+					<Add library="libodbc32.a" />
+					<Add library="..\..\..\..\..\curl\libcurl.a" />
+					<Add library="..\..\..\..\..\curl\libidn.a" />
+					<Add library="..\..\..\..\..\curl\librtmp.a" />
+					<Add library="..\..\..\..\..\curl\libssh2.a" />
+					<Add library="..\..\..\..\..\curl\libssl.a" />
+					<Add library="..\..\..\..\..\curl\libssl32.a" />
+					<Add library="..\..\..\..\..\curl\libcrypto.a" />
+					<Add library="..\..\..\..\..\curl\libz.a" />
+					<Add library="libwldap32.a" />
+					<Add library="ws2_32" />
+					<Add library="libwxmsw29u_adv.a" />
+					<Add library="winmm" />
+					<Add library="libgcc.a" />
+					<Add directory="C:\wxWidgets-2.9.2\lib\static_unicode" />
+					<Add directory="C:\curl" />
+				</Linker>
+			</Target>
+			<Target title="Windows Debug">
+				<Option output="bin\WindowsDebug\TUMessenger.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj\WindowsDebug\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-pipe" />
+					<Add option="-mthreads" />
+					<Add option="-DCURL_STATICLIB" />
+					<Add option="-DwxUSE_UNICODE" />
+					<Add directory="C:\wxWidgets-2.9.2\lib\debug_libs\mswud" />
+					<Add directory="C:\wxWidgets-2.9.2\include" />
+					<Add directory="C:\curl" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:\wxWidgets-2.9.2\include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw29ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxjpegd.a" />
+					<Add library="libwxtiffd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="libkernel32.a" />
+					<Add library="libuser32.a" />
+					<Add library="libgdi32.a" />
+					<Add library="libwinspool.a" />
+					<Add library="libcomdlg32.a" />
+					<Add library="libadvapi32.a" />
+					<Add library="libshell32.a" />
+					<Add library="libole32.a" />
+					<Add library="liboleaut32.a" />
+					<Add library="libuuid.a" />
+					<Add library="libcomctl32.a" />
+					<Add library="libwsock32.a" />
+					<Add library="libodbc32.a" />
+					<Add library="libcurl.a" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add directory="C:\wxWidgets-2.9.2\lib\debug_libs" />
+					<Add directory="C:\curl" />
+				</Linker>
+			</Target>
+			<Target title="Windows VC">
+				<Option output="bin\WindowsVC\TUMessenger.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj\WindowsVC\" />
+				<Option type="0" />
+				<Option compiler="msvc10" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/O2" />
+					<Add option="/w" />
+					<Add option="/EHsc" />
+					<Add option="/DCURL_STATICLIB" />
+					<Add option="/DwxUSE_UNICODE" />
+					<Add option="/DUNICODE" />
+					<Add directory="C:\libs\wxWidgets\include" />
+					<Add directory="C:\libs\wxWidgets\lib\vc_lib\mswu" />
+					<Add directory="C:\libs\curl\include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:\libs\wxWidgets\include" />
+					<Add directory="C:\Users\Michael\Desktop\Projekte\TUMessenger\" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxmsw29u_aui.lib" />
+					<Add library="wxmsw29u_html.lib" />
+					<Add library="wxmsw29u_adv.lib" />
+					<Add library="wxmsw29u_core.lib" />
+					<Add library="wxbase29u_xml.lib" />
+					<Add library="wxbase29u.lib" />
+					<Add library="wxtiff.lib" />
+					<Add library="wxjpeg.lib" />
+					<Add library="wxpng.lib" />
+					<Add library="wxzlib.lib" />
+					<Add library="wxregexu.lib" />
+					<Add library="wxexpat.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="winmm.lib" />
+					<Add library="shell32.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="rpcrt4.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="wsock32.lib" />
+					<Add library="wininet.lib" />
+					<Add library="libcurl.lib" />
+					<Add library="ws2_32.lib" />
+					<Add directory="C:\libs\wxWidgets\lib\vc_lib" />
+					<Add directory="C:\libs\curl" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="bin\Linux\TUMessenger" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj\Linux\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="`wx-config --cflags`" />
+					<Add option="`curl-config --cflags`" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config --libs all`" />
+					<Add option="`curl-config --static-libs`" />
+					<Add directory="\usr\local\lib" />
+				</Linker>
+			</Target>
+			<Target title="Mac OSX">
+				<Option output="bin\MacOSX\TUMessenger.app\Contents\MacOS\TUMessenger" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj\MacOSX\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="`/Users/ouned/Desktop/wxWidgets-2.9.1/wx-config --cflags`" />
+					<Add option="`/Users/ouned/Desktop/curl-7.21.1/curl-config --cflags`" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`/Users/ouned/Desktop/wxWidgets-2.9.1/wx-config --libs all`" />
+					<Add option="`/Users/ouned/Desktop/curl-7.21.1/curl-config --static-libs`" />
+					<Add directory="\usr\local\lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="TUBuddylist.cpp" />
+		<Unit filename="TUBuddylist.h" />
+		<Unit filename="TUChatwindow.cpp">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="TUChatwindow.h" />
+		<Unit filename="TUConnection.cpp" />
+		<Unit filename="TUConnection.h" />
+		<Unit filename="TUExFuncs.cpp" />
+		<Unit filename="TUExFuncs.h" />
+		<Unit filename="TUStartFrame.cpp" />
+		<Unit filename="TUStartFrame.h" />
+		<Unit filename="TUWinSeven.cpp">
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Unit filename="TUWinSeven.h">
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Unit filename="Windows\TUWinRes.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Unit filename="webview.cpp">
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Unit filename="webview.h">
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Unit filename="wxiepanel.cpp">
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Unit filename="wxiepanel.h">
+			<Option target="Windows" />
+			<Option target="Windows Debug" />
+			<Option target="Windows VC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

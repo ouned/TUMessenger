@@ -1,0 +1,41 @@
+wxWidgets muss mit
+  #define wxHTML_SCROLL_STEP 1
+compiliert werden damit der Abstand am Ende immer korrekt berechnet wird und
+genauer gescrollt werden kann.
+
+Gescrollt wird ab Alpha 12 im wxWidgets-Code um das kurzzeitige Zucken beim Autoscroll zu vermeiden.
+
+            SetScrollbars
+            (
+                wxHTML_SCROLL_STEP, wxHTML_SCROLL_STEP,
+                ScrollSteps(m_Cell->GetWidth(), clientWidth - vscrollbar),
+                ScrollSteps(m_Cell->GetHeight(), clientHeight), 0, 999999999
+            );
+            
+            
+Alpha 13 Linuxscroll fix: ( src/html/htmlwin.cpp )
+        
+            SetScrollbars
+            (
+                wxHTML_SCROLL_STEP, wxHTML_SCROLL_STEP,
+                ScrollSteps(m_Cell->GetWidth(), clientWidth - vscrollbar),
+                ScrollSteps(m_Cell->GetHeight(), clientHeight), 0, 0, true
+            );
+
+	          int test;
+	          GetVirtualSize(NULL, &test);
+	          Scroll(0, test);
+	          
+Beta 3 Buddyliste Popup auch wenn nicht direkt über einer normalen wxHtmlCell: ( src/html/htmlwin.cpp )
+
+    else // mouse moved but stayed in the same cell
+    {
+        if ( cell )
+        {
+            OnCellMouseHover(cell, pos.x, pos.y);
+        }
+        else
+        {
+            OnCellMouseHover(rootCell, pos.x, pos.y);
+        }
+    }

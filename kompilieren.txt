@@ -1,0 +1,12 @@
+wxWidgets Linux:
+./configure --enable-unicode --disable-shared --with-gtk --with-libpng=builtin --with-zlib=builtin --with-libjpeg=builtin --with-regex=builtin --with-expat=builtin --with-xpm=builtin
+
+libcurl Linux:
+./configure --enable-shared=no --without-libssh2 --without-libidn --without-zlib --without-ssl --disable-ftp --disable-file --disable-ldap --disable-ldaps --disable-rtsp --disable-proxy --disable-dict --disable-telnet --disable-tftp --disable-pop3 --disable-imap --disable-smtp --disable-gopher --disable-manual
+
+Für Pakete:
+./configure --enable-unicode --disable-shared --with-gtk --without-libtiff --without-expat
+
+
+Manifest einbinden MinGW:
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "test.manifest"

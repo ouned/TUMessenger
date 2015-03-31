@@ -1,0 +1,34 @@
+#include <windows.h>
+
+wxICON_A ICON "TUMessenger.ico"
+
+1 VERSIONINFO
+FILEVERSION      3,0,0,35
+PRODUCTVERSION   3,0,0,35
+FILEFLAGSMASK    0x3fL
+FILEFLAGS        0x0L
+FILEOS           VOS_NT_WINDOWS32
+FILETYPE         VFT_APP
+FILESUBTYPE      VFT2_UNKNOWN
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904E4"
+        {
+            VALUE "CompanyName",      "download\0"
+            VALUE "FileDescription",  "TUMessenger\0"
+            VALUE "FileVersion",      "3.0 Beta 9\0"
+            VALUE "InternalName",     "TUMessenger\0"
+            VALUE "LegalCopyright",   "GPL v3\0"
+            VALUE "OriginalFilename", "TUMessenger.exe\0"
+            VALUE "ProductName",      "TUMessenger\0"
+            VALUE "ProductVersion",   "3.0 Beta 9\0"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0407, 0x04E4
+    }
+}
+
+#include <wx/msw/wx.rc>

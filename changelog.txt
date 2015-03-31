@@ -1,0 +1,288 @@
+// ---------------------------------------------------------------------------------------------- //
+// TUMessenger Changelog
+//
+// Author: download
+// Webseite: http://tumessenger.ouned.de
+// ---------------------------------------------------------------------------------------------- //
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 9
+// -------------------------------------------------------------------------------------------------
+
+- Smilies in Empfangsrichtung gefixt
+- Mit Visual Studio 2010 kompiliert
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 8
+// -------------------------------------------------------------------------------------------------
+
+- Verbindung kann wieder aufgenommen werden
+- Verschlüsselte Verbindung (HTTPS)
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 7
+// -------------------------------------------------------------------------------------------------
+
+- Windows: Windows 7 Overlayicon
+- MacOSX: MacOSX wird wieder unterstützt
+- Verschicken großer Nachrichten möglich
+- FTP und HTTPS Links
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 6
+// -------------------------------------------------------------------------------------------------
+
+- Nachrichten mit Sonderzeichen können wieder verschickt werden
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 5
+// -------------------------------------------------------------------------------------------------
+
+- Windows: Links wieder aufrufbar
+- Buddys ohne Status werden wieder angezeigt
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 4
+// -------------------------------------------------------------------------------------------------
+
+- Windows: Neue Zeile bei abgeschickten Nachrichten an der Cursorposition entfernt
+- Windows: Windows 7 Verhalten beim Anpinnen verbessert
+- Windows: Die IE-Engine kann zur Darstellung des Nachrichtenfensters genutzt werden
+- Linux: Unnötige Rahmen im Chatfenster entfernt
+- Bug behoben der Buddys in seltenen Fällen doppelt hinzufügte
+- Status wird richtig gesetzt nach abgebrochener Verbindung
+- Trayinfo Dialog entfernt
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 3
+// -------------------------------------------------------------------------------------------------
+
+- Windows: Doppeltes starten der TUMessenger.exe fokusiert die bestehende Buddyliste
+- Buddyinfo Popupfenster öffnet sich auch wenn die Maus nicht direkt über Text / Bild ist
+- Verstecktes Starten ( Konsole: tumessenger --hidden bzw. TUMessenger.exe --hidden )
+- Tabs im Chatfenster werden nach Offlinemodus aktualisiert
+- Fehler bei Statusänderung im Chatfenster behoben
+- Buddyinfo Popupfenster stiehlt den Fokus nicht mehr
+- Große Ansicht der Buddys angepasst
+- Tooltip für das Trayicon
+- Status kann gesetzt werden
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 2
+// -------------------------------------------------------------------------------------------------
+
+- Windows: Unterstützung für den Standby und Ruhezustand
+- Linux: Ubuntu 11.04 (Natty) wird unterstützt
+- Erste Nachricht wird möglichst schnell verschickt
+- Fehlgeschlagene Nachrichten erscheinen in Orange
+- wxWidgets Buildinfo im Infofenster
+- Bessere Erkennung von Verbindungsabbrüchen
+- wxWidgets 2.9.2
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Beta 1
+// -------------------------------------------------------------------------------------------------
+
+- Linux: libtiff und libexpat nicht mehr nötig
+- Linux: Leere Nachrichten werden nicht mehr verschickt
+- Linux: Ubuntu 11.04 Kompatibilität weiter verbessert
+- Linux: Keine Warnung mehr nach einem Absturz
+- Windows: Windows 7 Taskbar Features standardmäßig aktiviert
+- Verbessertes Beenden beim Herunterfahren
+- Bessere Fensterpositionen und Größen beim erstem Start
+- Profilbildaktualisierung Absturz behoben
+- Komplett überarbeitetes Nachrichtensystem
+- Bei erfolgreich verschickten Nachrichten wird der Benutzername fett dargestellt
+- Fehlermeldung falls Nachrichten an nicht vorhandene Benutzernamen verschickt werden
+- Warnung beim Beenden / Benutzerwechsel falls noch Nachrichten verschickt werden
+- Weitere Codeanpassungen
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 20 (letzte Alpha)
+// -------------------------------------------------------------------------------------------------
+
+- Linux: FHS Standards werden eingehalten ( Installation unter Ubuntu 11.04 möglich )
+- Linux: Autoscrollen gefixt
+- Linux: libpng, libtiff, libexpat, libjpeg in den compilierten Paketen dynamisch gelinkt
+- Nachrichten werden nach 5 fehlgeschlagenen Sendeversuchen verworfen
+- Windows: Neues Installationspaket (keine Adminrechte mehr nötig)
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 19
+// -------------------------------------------------------------------------------------------------
+
+- Linux: Pakete ab jetzt unter Debian Squeeze (6.0) kompiliert
+- Linux: amd64 Pakete
+- Windows: Win7Taskbar Unterstützung ( Aktivierbar in der Einstellungsdatei: Win7Taskbar=An )
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 18
+// -------------------------------------------------------------------------------------------------
+
+- Weiteres Speicherleck entfernt
+- Linux: Makefile für dynamisches Linken angepasst
+- Windows: TUMessenger & wxWidgets mit g++ 4.4.0 statt 3.4.5 kompiliert
+- Im Loginfenster kann jetzt mit der Tabtaste vom Benutzer- in das Passwortfeld gewechselt werden
+- Windows: Iconqualitäten erhöht und neues Installationsicon
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 17
+// -------------------------------------------------------------------------------------------------
+
+- Linux: Buddylistenposition wird richtig geladen
+- Linux: Makefile um noch mehr Distributionen zu unterstützen
+- [Test Fix] Seltener Sortierfehler bei Buddys
+- Standardmäßig der zuletzt benutzte Account im Loginfenster ausgewählt
+- 2 große Speicherlecks behoben
+- Windows: [Test Fix] Buddylistenposition sollte wieder richtig geladen werden
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 16
+// -------------------------------------------------------------------------------------------------
+
+- Linux: Eingabe im gesamten Chatfenster möglich (In Windows schön länger möglich)
+- Windows: Position wird immer richtig gesetzt
+- Mac: Menüpunkte richtig sortiert
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 15
+// -------------------------------------------------------------------------------------------------
+
+- Linux & Mac Absturz beim Wechseln des Benutzers behoben
+- Position wird wieder richtig abgespeichert
+- Linux, Mac: Auto Ausloggen beim Herunterfahren funktioniert
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 14
+// -------------------------------------------------------------------------------------------------
+
+- Benutzerverwaltung integriert
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 13
+// -------------------------------------------------------------------------------------------------
+
+- Beim Ausloggen, Restarten, Herunterfahren des Systems loggt sich der Messenger aus
+- Peitschsmilie funktioniert
+- Chatfenster speichert Größe & Position auch beim Beenden des TUMessengers
+- Tabs können mit Strg + Tab gewechselt werden
+- Betreff wird in eingehenden Nachrichten in Fettdruck eingebettet
+- Tabs können mit der mittleren Maustaste geschlossen werden
+- Windows, Mac: Schönere Icons in den Menüs
+- Versionsprüfung im Hilfemenü möglich
+- Windows: Icon der TUMessenger.exe schärfer
+- Maximale Anzahl der Nachrichten in der Warteschleife auf 10 erhöht
+- Webseite im Hilfemenü aufrufbar
+- Meldung beim Versuch den Messenger doppelt zu starten
+- Linux: Chatfenster blinkt jetzt genau wie unter Windows bis es anklickt wird bei neuen Nachrichten
+- Chat starten mit Person außerhalb der eigenen Buddyliste möglich
+- Profilbilder aktualisieren im Buddymenü
+- Einrahmung der Buddyliste entfernt
+- Es wird sichergestellt dass eine Nachricht abgeschickt wurde
+- Chatfenster wird wiederhergestellt bei Doppelklick auf Buddy
+- Linux: Fehler mit leerem Chatfenster behoben
+- gruebler smilie funktioniert
+- Windows Installationspaket: Keine mehrfachen Einträge mehr in der Systemsteuerung
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 12
+// -------------------------------------------------------------------------------------------------
+
+- Kurzes "Nach oben Zucken" bei neuen Nachrichten behoben
+- Ungleichen Abstand zum unterem Rand des Chatfensters auf festen Wert gesetzt
+- Weicheres Scrollen im Chatfenster
+- Automatisches "Nach oben Scrollen" beim Ändern der größe des Chatfensters behoben
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 11
+// -------------------------------------------------------------------------------------------------
+
+- Linux: Sounds funktionieren wieder
+- Sounds lassen sich wieder deaktivieren
+- Windows 2000/XP: Icons funktionieren wieder
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 10
+// -------------------------------------------------------------------------------------------------
+
+- Neues Logo ( Autor: Nightrider94 )
+- Neue Sounds
+- Falsche Fehlermeldung bei Passwörtern mit Unicodezeichen behoben
+- Autoscrolling bei Statusmeldungen
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 9
+// -------------------------------------------------------------------------------------------------
+
+- Mac OSX: Smilies funktionieren wieder
+- Windows: Chatfenster öffnet sich minimiert bei neuen Nachrichten ( kein Fokusklau )
+- Hat sich an- bzw. abgemeldet Benachrichtigungen im Chatfenster
+- Anstatt "Ich:" "DeinBenutzername:" im Chatfenster
+- Statusbox & Button ausgeblendet solange unimplementiert
+- Möglicher Sortierfehler wurde VIELLEICHT behoben. ( Test )
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 8
+// -------------------------------------------------------------------------------------------------
+
+- Möglicher Profilbildfehler beim Login behoben ( Gefunden von Go_Deep & behoben von Klischeepunk )
+- Nachrichten mit beliebiger Länge möglich
+- Einige Smilies gefixt
+- Fehler bei sehr vielen neuen Nachrichten behoben
+- Nachrichten wurden manchmal mehrfach empfangen -> behoben
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 7
+// -------------------------------------------------------------------------------------------------
+
+- Nachrichtenwarteschleife auf 5 gesetzt (Antispam)
+- Bessere Linkerkennung
+- Versionsprüfung verbessert
+- Mac OSX: Menüs angepasst
+- Linux: Icons angepasst
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 6
+// -------------------------------------------------------------------------------------------------
+
+- Seltene Abstürze behoben
+- Versionsprüfung eingebaut
+- Windows: Smilies funktionieren wieder
+- Windows: Neues Installationspaket
+- Mac OSX: Systemvoraussetzung auf 10.4 Tiger herabgesetzt
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 5
+// -------------------------------------------------------------------------------------------------
+
+- Klänge jetzt abschaltbar
+- Linux: Pakete verbessert
+- Erste Mac OSX Version
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 4
+// -------------------------------------------------------------------------------------------------
+
+- Text im Chatfenster kann mit Strg + C kopiert werden
+- Links jetzt anklickbar
+- Maximal Nachrichtenlänge: 550 Zeichen
+- Bug behoben der auftrat sobalt man von jemanden angeschrieben wurde der sich nicht in der Buddy-
+  liste befindet.
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 3
+// -------------------------------------------------------------------------------------------------
+
+- Smilieunterstützung implementiert
+- Kleine Ansicht implementiert
+- Neue Zeilen mit Strg, Shift möglich
+- Linux: Menüleiste nicht mehr abdockbar
+- Linux: "Überfenster" Schriftgröße verbessert
+
+// -------------------------------------------------------------------------------------------------
+// 3.0 Alpha 2
+// -------------------------------------------------------------------------------------------------
+
+- Linux: Abstürze behoben
+
+// -------------------------------------------------------------------------------------------------
